@@ -61,7 +61,7 @@ const Benefints = () => {
           </div>
         </div>
         <div>
-          <Image src="/happy.avif" width={583} height={100} alt="chose" className="object-cover shadow-2xl rounded-xl"/>
+          <Image src="/happy.avif" width={583} height={100} alt="benet" className="object-cover shadow-2xl rounded-xl"/>
         </div>
       </div>
     </div>

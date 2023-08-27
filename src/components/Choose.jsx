@@ -17,7 +17,7 @@ const Choose = () => {
       <div className="flex items-center justify-center mt-20 bg-gray-900">
         <div className=" flex flex-col lg:flex lg:flex-row sm:items-center justify-center items-center  ">
           <div>
-            <Image src="/chose.webp" width={423} height={100} alt="chose" className="object-cover shadow-2xl rounded-xl"/>
+            <Image src="/chose.webp" width={423} height={100} alt="chosen" className="object-cover shadow-2xl rounded-xl"/>
           </div>
           <div className="flex flex-col gap-6 shadow-2xl p-10 bg-white-50  text-center mr-[-35px] z-100">
             <h3 className="text-4xl font-bold  text-blue-300 ">
