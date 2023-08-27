@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className="bg-blue-400  text-white align-center h-12 flex flex-col items-center justify-around md:text-base p-5">
+    <div className="bg-blue-400  text-white align-center h-20 flex flex-col items-center justify-around md:text-base p-5 w-full">
   
     
     <div className="flex gap-3 text-white ">
@@ -21,7 +21,7 @@ const Footer = () => {
       <FaYelp className="w-6 h-6 bg-transparent  cursor-pointer hover:scale-110 transition-all shadow-2xl" />
       <FaLinkedinIn className="w-6 h-6 bg-transparent  cursor-pointer hover:scale-110 transition-all shadow-2xl" />
     </div>
-    <div>Copyright © 2019 - 2023 - airductvents.com - Sitemap</div>
+    <div className="text-center mx-auto">Copyright © 2019 - 2023 - airductvents.com - Sitemap</div>
 
   </div>
   )

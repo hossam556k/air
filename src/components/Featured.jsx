@@ -3,9 +3,9 @@ import React from "react";
 
 const Featured = () => {
   return (
-    <div className=""  data-aos="fade-up"
+    <div className="w-full mx-auto"  data-aos="fade-up"
     data-aos-duration="3000">
-      <div className="flex flex-col  lg:flex lg:flex-row items-center justify-center mt-[-20px]">
+      <div className="flex items-center justify-center flex-col  lg:flex lg:flex-row  mt-[20px] w-full">
         <div data-aos="fade-left" data-aos-duration="500"  className=" flex gap-6 px-8 py-6 bg-green-400">
         <Image src="/express-delivery.png" width={65} height={65} alt="car" className="object-fill "/>
           <div className="flex flex-col gap-2">

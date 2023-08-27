@@ -76,7 +76,7 @@ const Cleaners = () => {
             src="/off.webp"
             width={453}
             height={552}
-            className="sm:m-6 object-fill "
+            className="sm:m-6 object-fill ml-5"
             alt="offer"
           />
         </div>

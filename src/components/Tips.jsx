@@ -59,7 +59,7 @@ const Tips = () => {
           
           <Image
             src="/air2.jpg"
-            width={800}
+            width={500}
             height={552}
             className="sm:m-6  ml-[-2px] rounded-xl hidden xl:flex object-cover"
             alt="mold"
