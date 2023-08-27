@@ -2,26 +2,104 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+body {
+  background-color: #111827;
+  overflow-x: hidden;
+}
+:root {
+  --main-transition: 0.3s;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+  --section-background: #ececec;
+}
+.main-title {
+  margin: 0px auto 80px;
+  border: 2px solid black;
+  padding: 10px 20px;
+  width: fit-content;
+  position: relative;
+  color: #3b82f6;
+  z-index: 1;
+  transition: var(--main-transition);
+}
+.main-title::before {
+  content: "";
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  z-index: -1;
+  background-color: ##60a5fa !important;
+  position: absolute;
+  border-radius: 50%;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main-title:hover::before {
+  z-index: -1;
+  animation: move-left 0.5s linear forwards;
+}
+.main-title:hover::after {
+  z-index: -1;
+  animation: move-right 0.5s linear forwards;
+}
+.main-title:hover {
+  color: white;
+  border: 2px solid white;
+  transition-delay: 0.5s;
+}
+.main-title::after {
+  content: "";
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  z-index: -1;
+  background-color: #3b82f6 !important;
+  position: absolute;
+  border-radius: 50%;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@keyframes move-left {
+  50% {
+    left: 0;
+    width: 12px;
+    height: 12px;
+  }
+  100% {
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@keyframes move-right {
+  50% {
+    right: 0;
+    width: 12px;
+    height: 12px;
+  }
+  100% {
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+[data-aos] {
+  pointer-events: none;
+}
+.aos-animate {
+  pointer-events: auto;
+}
+.aos-init[data-aos][data-aos].aos-animate {
+  transform: unset;
 }
