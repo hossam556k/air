@@ -1,11 +1,8 @@
-"use client"
 import Notification from '@/components/Notification'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import { useEffect } from 'react'
-import Aos from 'aos'
 import 'aos/dist/aos.css'; 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,13 +14,7 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  useEffect(() => {
-    Aos.init({
-      easing: "ease-out-cubic",
-      once: true,
-      offset: 10,
-    });
-  }, []);
+ 
   return (
     <html lang="en">
       <body className={inter.className}>
